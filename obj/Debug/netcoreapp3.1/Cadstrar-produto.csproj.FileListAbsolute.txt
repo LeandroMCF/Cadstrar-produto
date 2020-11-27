@@ -1,0 +1,13 @@
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.exe
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.deps.json
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.runtimeconfig.json
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.runtimeconfig.dev.json
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.dll
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\bin\Debug\netcoreapp3.1\Cadstrar-produto.pdb
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.csprojAssemblyReference.cache
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.AssemblyInfoInputs.cache
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.AssemblyInfo.cs
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.csproj.CoreCompileInputs.cache
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.dll
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.pdb
+C:\Users\leand\OneDrive\Área de Trabalho\Cadstrar-produto\obj\Debug\netcoreapp3.1\Cadstrar-produto.genruntimeconfig.cache

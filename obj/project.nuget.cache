@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6ZMEF/8d9CgEucLwax0gFM0osWeS0fCO50dza1zG0bZ0YM8bEuEf8MYuFfRD+YhYskrVFZszqTIeWCsnvILWWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Cadstrar-produto\\Cadstrar-produto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leand\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
