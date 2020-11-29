@@ -6,21 +6,21 @@ namespace Cadstrar_produto
     {
         static void Main(string[] args)
         {
-            string escolhaMenu, rep;
+            string escolhaMenu, escolhaCorre, confiNovoNome, confiNovoValor, rep;
             string[] nome = new string[4], promocoes = new string[4];
             float[] preco = new float[4];
             bool promocao = true;
-            int cont = 0;
+            int cont = 0, poseNome = 0, poseValor;
 
             Console.WriteLine("----------------\nCadastrando produtos\n----------------");
             do
             {
-                Console.WriteLine($"[C] Cadastrar produto\n[L] Listar produtos\n[S] Sair");
+                Console.WriteLine($"[C] Cadastrar produto\n[L] Listar produtos\n[M] Mudar/Correção\n[S] Sair");
                 escolhaMenu = Console.ReadLine();
                 escolhaMenu = escolhaMenu.ToUpper();
                 while (escolhaMenu != "C" && escolhaMenu != "L" && escolhaMenu != "M" && escolhaMenu != "S")
                 {
-                    Console.WriteLine($"Resposta inválida.\n[C] Cadastrar produto\n[L] Listar produtos\n\n[S] Sair");
+                    Console.WriteLine($"Resposta inválida.\n[C] Cadastrar produto\n[L] Listar produtos\n[M] Mudar/Correção\n[S] Sair");
                     escolhaMenu = Console.ReadLine();
                     escolhaMenu = escolhaMenu.ToUpper();
                 }
@@ -95,14 +95,66 @@ namespace Cadstrar_produto
                         }
                     break;
 
+                    case "M":
+                        Console.WriteLine($"Você deseja corrigir o:\n[N] Nome\n[V] Valor\n[P] Promoção\n[C] Canselar");
+                        escolhaCorre = Console.ReadLine();
+                        escolhaCorre = escolhaCorre.ToUpper();
+                        while (escolhaCorre != "N" && escolhaCorre != "V" && escolhaCorre != "P" && escolhaCorre != "C")
+                        {
+                            Console.WriteLine($"Resposta inválida.\nVocê deseja corrigir o:\n[N] Nome\n[V] Valor\n[P] Promoção\n[C] Canselar");
+                            escolhaCorre = Console.ReadLine();
+                            escolhaCorre = escolhaCorre.ToUpper();
+                        }
+                        switch (escolhaCorre)
+                        {
+                            case "N":
+                                do
+                                {   
+                                Console.WriteLine($"Digite em qual posição o produto que você deseja alterar está");
+                                poseNome = int.Parse(Console.ReadLine());
+                                poseNome = poseNome - 1;
+                                Console.WriteLine($"O produto que você deseja alterar é o: {nome[poseNome]}?\n[S] Sim\n[N] Não");
+                                confiNovoNome = Console.ReadLine();
+                                confiNovoNome = confiNovoNome.ToUpper();
+                                while (confiNovoNome != "N" && confiNovoNome != "S")
+                                {
+                                    Console.WriteLine($"Resposta inválida.\nO produto que você deseja alterar é o: {nome[poseNome]}?\n[S] Sim\n[N] Não");
+                                    confiNovoNome = Console.ReadLine();
+                                    confiNovoNome = confiNovoNome.ToUpper();
+                                }
+                                } while (confiNovoNome == "N");
+                                Console.WriteLine($"Digite o novo nome do produto");
+                                nome[poseNome] = Console.ReadLine();
+                                Console.WriteLine($"Novo nome do produto salvo!");
+                            break;
+                            case "V":
+                                do
+                                {   
+                                Console.WriteLine($"Digite em qual posição o valor que você deseja alterar está");
+                                poseValor = int.Parse(Console.ReadLine());
+                                poseValor = poseValor - 1;
+                                Console.WriteLine($"O produto que você deseja alterar o valor é o: {nome[poseValor]}?\n[S] Sim\n[N] Não");
+                                confiNovoValor = Console.ReadLine();
+                                confiNovoValor = confiNovoValor.ToUpper();
+                                while (confiNovoValor != "N" && confiNovoValor != "S")
+                                {
+                                    Console.WriteLine($"Resposta inválida.\nO produto que você deseja alterar o valor é o: {nome[poseValor]}?\n[S] Sim\n[N] Não");
+                                    confiNovoValor = Console.ReadLine();
+                                    confiNovoValor = confiNovoValor.ToUpper();
+                                }
+                                } while (confiNovoValor == "N");
+                                Console.WriteLine($"Digite o novo valor do produto");
+                                preco[poseValor] = float.Parse(Console.ReadLine());
+                                Console.WriteLine($"Novo valor do produto salvo!\n------------------");
+                            break;
+                        }
+                    break;
 
                     default:
                             Console.WriteLine($"Ok, obrigado. Tchau!");
                     break;
-                }
-                
-                
-            } while (true);
+                }    
+            } while (escolhaMenu != "S");
         }
 
         //Funções
